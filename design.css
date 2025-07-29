@@ -1,6 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/garet');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&display=swap');
-
 .logo {padding: 5px; margin-left: 30px;}
 
 ::-webkit-scrollbar{
@@ -36,21 +35,20 @@ div header {overflow: hidden;
         -webkit-transition: all 0.2s ease-in; 
         transition: all 0.2s ease-in;}
 .Link-Home {font-weight: 500;}
-
-.Link:hover, .Link-Home:hover {color: ghostwhite; font-size: 25px; 
-            text-decoration: none; 
-            text-shadow:0px 0px 30px rgb(255, 255, 255); 
-            -moz-transition: all 0.2s ease-in;
-            -o-transition: all 0.2s ease-in; 
-            -webkit-transition: all 0.2s ease-in; 
-            transition: all 0.2s ease-in;}
-
+        
+.Link:hover, .Link-Home:hover {color: ghostwhite; font-size: 21x; 
+        text-decoration: none; 
+        text-shadow:0px 0px 30px rgb(255, 255, 255); 
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in; 
+        -webkit-transition: all 0.2s ease-in; 
+        transition: all 0.2s ease-in;}
 
 * {box-sizing: border-box;}
 
-.intro, .intro-proj  {background-image: url(images/franci-bg3.png); width: auto; height: 660px;
+.intro{background-image: url(images/franci-bg3.png); width: auto; height: 660px;
         padding-top: 130px; background-repeat: no-repeat; background-size: cover;}
-.intro-proj {background-image: url(images/franci-bg3.png); width: auto; height: auto;
+.intro-proj {background-image: url(images/franci-bg4.png); width: auto; height: auto;
         padding-top: 130px; background-repeat: no-repeat; background-size: cover;}
 
 
@@ -58,7 +56,7 @@ div header {overflow: hidden;
             100% {background-position: 2000px 0;}
         }
 
-.intro h1, .intro-proj h1 {font-size: 120px; font-family: 'League Spartan', sans-serif; 
+.intro h1, .intro-proj h1 , .sub-title, .serv-title, .serv-title-1{font-size: 120px; font-family: 'League Spartan', sans-serif; 
         color: transparent; text-align: center; background: url(images/back-1.png);
         -webkit-text-stroke: 1px white; -webkit-background-clip: text;
         background-position: 0 0;
@@ -67,69 +65,115 @@ div header {overflow: hidden;
 .name {color:#DDC571;}
 .desc {color: white; padding: 40px 400px 0px 400px;}
 .name, .desc, .proj-desc {text-align: center; font-family: 'Garet', sans-serif;}
-.proj-desc{ color: wheat; padding: 10px 200px 0px 200px }
+.proj-desc{ color: wheat; padding: 10px 200px 0px 200px ;}
+.proj-desc-1{ color: wheat; padding: 10px 200px 0px 200px; text-align: center; font-family: 'Garet', sans-serif; }
+.detail-box {background-image: url(images/try.png); width: auto; height: 700px;
+background-repeat: no-repeat; background-size: cover; padding-top: 30px;}
 
-.detail-box {background-image: url(images/bg-1.png); width: auto; height: 660px;
-    padding-top: 30px; background-repeat: no-repeat; background-size: cover;}
-
-.detail-box-img {float: left; width: 426.5px; height: auto; margin-left: 180px; display: inline-block; margin-right: 90px;}
-.about-title {font-size: 35px; font-family: 'League Spartan', sans-serif; font-weight: 700; padding-bottom: 30px;}
+.detail-box-img {float: right; margin-left: 20px; display: inline-block; margin-right: 110px;}
+.about-title {font-size: 100px; font-family: 'League Spartan', sans-serif; font-weight: 700; 
+        color: transparent; -webkit-text-stroke: 1.5px black;}
 .franci-desc {padding: 200px}
 .position { font-family: 'League Spartan', sans-serif;  font-size: 20px;}
 
-.franci-detail-box{display: grid; grid-template-columns: 0.5fr 0.5fr; grid-gap: 20px;
+.franci-detail-box{display: grid; grid-template-columns: 0.5fr 0.5fr; grid-gap: 90px;
         grid-template-rows: auto; box-shadow: 2px 2px 30px rgba(0,0,0,0.2);}
 
 .detail-box-img{width: 400px; height: auto;}
 
-.detail-box-img img{width: 100%; height: 100%; object-position: center; object-fit: cover;}
+.detail-box-img img{width: 710px; height: auto; object-position: center; object-fit: cover;}
 
 .detail-box-text{padding: 20px 20px 20px 0px; position: relative; margin-top: 50px; margin-left: -130px;
         font-family: 'Garet', sans-serif;}
 
-.detail-name{font-size: 120px; font-family: 'League Spartan', sans-serif; 
-  font-size: 50px; color: #333; font-weight: bold; text-decoration: none;}
+.detail-name{font-size: 90px; font-family: 'League Spartan', sans-serif; color: black; font-weight: 700; text-decoration: none;}
 
 .franci-social-links{display: flex; align-items: center;} 
 
-.franci-social-links a{width: 30px; height: 30px; display: flex; justify-content: center;
-            align-items: center; background-color: #c0bbbb; margin: 5px; border-radius: 50%;
-            font-size: 0.9rem; color: var(--black);}
+.franci-social-links a{width: 50px; height: 50px; justify-content: center; margin-right: 5px;
+            align-items: center; font-size: 25px; color: rgb(255, 255, 255); text-decoration: none;}
 
-.franci-social-links a:hover{color: var(--white); background-color: var(--red); transition: all ease 0.3s;}
+.icons i{background-color: black;
+   border-radius: 50%;
+   padding: 10px; 
+}
+
+.icons i:hover{background-color: #4a4a4a;
+        border-radius: 50%;
+        padding: 10px; transition: all ease 0.3s;
+     }
+
 
 .detail-box-text .position{color: #000000; border-bottom: 1px solid #414141;
                 margin: 0px; padding: 10px 0px; width: 97%; margin-top: 20px; margin-bottom: 30px;}
 
 .detail-box-text p{color: #202020; font-weight: 500; font-size: 1.0rem;}
 
-.view-work-btn {width: 150px; height: 45px; display: flex; justify-content: center; align-items: center;
-    color: white; background-color: #535353; margin-top: 20px;}
 
-.view-work-btn:hover{color: var(--white); background-color:  #202020; transition: all ease 0.3s;}
+.buttons {display: flex; align-items: center;}
+
+.dl-cl-btn{width: 220px; height: 45px; display: flex; justify-content: center; align-items: center;
+        color: white; background-color: #000000; margin-top: 20px; text-decoration: none; }
+
+.dl-rs-btn{width: 200px; height: 45px; display: flex; justify-content: center; align-items: center;
+        color: white; background-color: #000000; margin-top: 20px; text-decoration: none; margin-right: 15px;}
+
+.view-work-btn {width: 150px; height: 45px; display: flex; justify-content: center; align-items: center;
+    color: white; background-color: #000000; margin-top: 20px; text-decoration: none; margin-right: 15px;}
+
+.view-work-btn:hover,.dl-cl-btn:hover,.dl-rs-btn:hover  {color: white; background-color:  #4a4a4a; transition: all ease 0.3s;}
 
 .projects{padding: 15px 9%; padding-bottom: 100px; font-family: 'League Spartan', sans-serif;  }
 .projects .heading {text-align: center; padding-bottom: 15px; color: #DDC571; padding: 45px 0px 15px 0px;
-                    text-shadow: 0 5px 10px rgba(0, 0, 0,.2); font-size: 50px; width: auto; }
-.projects .proj-desc, intro .proj-desc{text-align: center; padding: 15px 100px 40px 100px; color: white; font-family: 'Garet', sans-serif;}
-.projects .box-container {display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;}
-.projects .box-container .box, .projects .box-container .box-p{
+                    text-shadow: 0 5px 10px rgba(0, 0, 0,.2); font-size: 50px; width: auto; text-decoration: none; }
+.projects .heading h3 {font-size: 60px;}
+.projects .proj-desc{text-align: center; padding: 15px 100px 40px 100px; color: black; font-family: 'Garet', sans-serif;}
+
+.projects .box-container {display: grid; grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); grid-row-gap: 180px; grid-column-gap: 30px;  margin-top: 150px;}
+.projects .box-container-1 {display: grid; grid-template-columns: repeat(auto-fit, minmax(323px, 1fr)); gap: 40px;}
+.projects .box-container-2 {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;}
+.projects .box-container .box, .projects .box-container-1 .box-p{
         box-shadow: 0 5px 10px rgba(0, 0, 0,.2); border-radius: 5px;
-        background: white; text-align: center; padding: 30px 20px;}
+        background: white; text-align: center; padding: 30px 20px; }
 
-.projects .box-container .box img{height: auto; width: 360px;}
-.projects .box-container .box h1{height: 80px; color: #6a663f; font-size: 35px; padding: 10px 0;}
-.projects .box-container .box p{height: 80px; color: black; font-size: 13px; font-family: 'Garet', sans-serif; padding-top: -20px;}
-.projects .box-container .box .btn{margin-top: 10px; display: inline-block; background: #535353; 
-color: white; font-size: 17px; border-radius: 5px; padding: 8px 25px;}
 
-.projects .box-container .box-p img{height: auto; width: 285px;}
-.projects .box-container .box-p h1{height: 80px; color: #6a663f; font-size: 35px; padding: 10px 0;}
-.projects .box-container .box-p p{height: 80px; color: black; font-size: 13px; font-family: 'Garet', sans-serif; padding-top: -20px;}
-.projects .box-container .box-p .btn{margin-top: 10px; display: inline-block; background: #535353; 
-color: white; font-size: 17px; border-radius: 5px; padding: 8px 25px;}
+.projects .box-container .box .proj-title h1{font-size: 30px; font-family: 'League Spartan', sans-serif; font-weight: 700; 
+color: black; }
 
-.projects .box-container .box .btn:hover{box-shadow: 0 10px 15px rgba(0, 0, 0,.2); transform: scale(1.03);}
+.projects .box-container .box img{height: auto; width: 450px;  margin-top: -150px; filter: drop-shadow(2px 8px 10px #000000);}
+
+.projects .box-container .box img:hover{transform: scale(1.1); 
+        transition: transform .5s ease;}
+.box-container .box .proj-title{color: #000000; font-family: 'League Spartan', sans-serif; font-size: 40px; padding-top: 20px; }
+.box-container-1 .box-p .proj-title{padding-top: 15px; }
+.projects .box-container .box p{height: 50px; color: black; font-size: 13px; font-family: 'Garet', sans-serif; padding-top: -20px;}
+.projects .box-container .box .btn{width: 100%; height: 45px; display: flex; justify-content: center; align-items: center;
+        color: white; background-color: #000000; margin-top: 20px; text-decoration: none; }
+
+
+.projects .box-container-1 .box-p img{width: 400px;height: auto; }
+
+.projects .box-container-1 .box-p p{height: 50px; color: black; font-size: 13px; font-family: 'Garet', sans-serif; padding-top: -20px;}
+.projects .box-container-1 .box-p .btn{width: 100%; height: 45px; display: flex; justify-content: center; align-items: center;
+        color: white; background-color: #000000; margin-top: 20px; text-decoration: none; }
+
+.projects .box-container .box .btn:hover,.projects .box-container-1 .box-p .btn:hover {box-shadow: 0 10px 15px rgba(0, 0, 0,.2); transform: scale(1.03); background-color: #4a4a4a;}
+
+.projects .box-container .box .btn:hover,.projects .box-container-2 .box .btn:hover {box-shadow: 0 10px 15px rgba(0, 0, 0,.2); transform: scale(1.03); background-color: #4a4a4a;}
+
+.projects .box-container-2 .box img{width: 300px;height: auto; box-shadow: 1px 0px 28px 1px rgba(137,137,137,1);
+        -webkit-box-shadow: 1px 0px 28px 1px rgba(137,137,137,1);
+        -moz-box-shadow: 1px 0px 28px 1px rgba(137,137,137,1);}
+
+        .projects .box-container-2 .box img:hover {
+                transform: scale(1.1); 
+                transition: transform .8s ease;
+                box-shadow: 1px 0px 28px 1px white;
+                -webkit-box-shadow: 1px 0px 28px 1px white;
+                -moz-box-shadow: 1px 0px 28px 1px white;}
+.projects .box-container-2 .box p{height: 80px; color: black; font-size: 13px; font-family: 'Garet', sans-serif; padding-top: -20px;}
+.projects .box-container-2 .box .btn{width: 100%; height: 45px; display: flex; justify-content: center; align-items: center;
+        color: white; background-color: #000000; margin-top: 20px; text-decoration: none; }
 
 @media (max-width:768px){
         .projects{
@@ -137,26 +181,203 @@ color: white; font-size: 17px; border-radius: 5px; padding: 8px 25px;}
         }
 }
 
-.skill-title{padding-bottom: -100px;}
-.skill-container {
-  width: 100%;
-  background-color: #ddd; 
-  padding-bottom: -100px;
+
+.skill-box{background-image: url(images/franci-bg.png); width: auto; height: 960px;
+        padding-top: 90px; background-repeat: no-repeat; background-size: cover;
+        color: white;}
+
+.sub-title{text-align: center; font-size: 95px;}
+
+
+section{display: flex;flex-wrap: wrap;}
+
+.container1{width: 600px; height: 500px; padding: 75px 90px; margin-left: 120px;  }
+
+.heading, .heading1 {text-align: center; text-decoration: underline; text-underline-offset: 10px; 
+        text-decoration-thickness: 5px; color: #DDC571;
+        margin-bottom: 30px;}
+
+.container1 .heading, .heading1 {font-family: 'Garet', sans-serif; text-decoration: none; font-weight: 300;}
+.bar{font-size: 23px;}
+.Technical-bars .bar{margin: 40px 0 40px 0px;}
+.Technical-bars .bar:first-child{margin-top: 0;}
+.Technical-bars .bar:last-child{margin-bottom: 0;}
+.Technical-bars .bar .info{margin-left: 5px; font-family: 'League Spartan', sans-serif; font-size: 27px;}
+.Technical-bars .bar .info span{font-size: 20px; font-weight: 500; 
+        animation: showText 0.5s 1s linear;}
+
+.Technical-bars .bar .progress-line{position: relative; border-radius: 10px; width: 100%;
+                                    height: 7px; background-color: #000000; transform: scaleX(0);
+                                    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+                                    transform-origin: left;
+                                    }
+                        
+@keyframes animate{100%{
+        transform: scaleX(1);
+}}
+
+.Technical-bars .bar .progress-line span{
+        height: 100%; border-radius: 10px;
+        background-color: #DDC571;
+        animation:animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+        position: absolute; transform: scaleX(0);
+        transform-origin: left;
 }
 
-.skills {
-  text-align: right; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  color: white; 
+.progress-line.html span{width: 90%;}
+.progress-line.css span{width: 85%;}
+.progress-line.angular span{width: 70%;}
+.progress-line.wordpress span{width: 75%;}
+.progress-line.flutter span{width: 70%;}
+.progress-line.adobe span{width: 75%;}
+.progress-line.figma span{width: 85%;}
+
+.progress-line span::after{position: absolute; padding: 1px 8px; color: white; background-color: #000000;
+                           font-size: 14px; border-radius: 3px; top: -28; right: -20px; font-family: 'League Spartan', sans-serif;
+                           animation: showText 2.5s 1.5s linear forwards; opacity: 0;}
+
+.progress-line.html span::after{content: "90%";}
+.progress-line.css span::after{content: "85%";}
+.progress-line.angular span::after{content: "70%";}
+.progress-line.wordpress span::after{content: "75%";}
+.progress-line.flutter span::after{content: "70%";}
+.progress-line.adobe span::after{content: "75%";}
+.progress-line.figma span::after{content: "85%";}       
+
+.progress-line span::before{content: ""; position: absolute; width: 0; height: 0; right: 0; top: -10px;
+border: 7px solid transparent; border-bottom-width: 0px; border-right-width: 0px; border-top-color: black;
+animation: showText 2.5s 1.5s linear forwards; opacity: 0;}
+
+@keyframes showText {
+        100%{
+                opacity: 1;
+        }
 }
 
-.wordp {width: 75%; background-color: #6a663f;}
-.wordpr {width: 90%; background-color: #6a663f;}
-.html {width: 85%; background-color: #6a663f;}
-.css {width: 90%; background-color: #6a663f;}
-.db {width: 80%; background-color: #6a663f;}
-.time {width: 90%; background-color: #6a663f;}
+.radial-bars{width:100%; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: flex-start;}
+.radial-bars .radial-bar{width: 50%; height: 170px; margin-bottom: 30px; position: relative;}
+.radial-bars .radial-bar svg{position: absolute; top: 50%; left: 50%; width: 140; height: 180;
+                             transform: translate(-50%, -50%) rotate(-90deg);}
+
+.radial-bars .radial-bar .progress-bar{stroke: black; stroke-width: 10; fill: transparent; stroke-dasharray: 502;
+                                       stroke-dashoffset: 502; stroke-linecap: round; animation: animate-bar 1s linear forwards;}
+@keyframes animate-bar {
+        100%{
+                stroke-dashoffset: -1;
+        }
+}
+
+.path{stroke: #DDC571; stroke-width: 10; fill: transparent; stroke-dasharray: 502;
+        stroke-dashoffset: 502; stroke-linecap: round;}
+
+.path-1{animation: animate-path1 2s 2s linear forwards;}
+.path-2{animation: animate-path2 2s 2s linear forwards;}
+.path-3{animation: animate-path3 2s 2s linear forwards;}
+.path-4{animation: animate-path1 2s 2s linear forwards;}
+.path-5{animation: animate-path4 2s 2s linear forwards;}
+.path-6{animation: animate-path5 2s 2s linear forwards;}
+
+@keyframes animate-path1 {
+        100%{
+                stroke-dashoffset: 50;
+        }
+}
+@keyframes animate-path2 {
+        100%{
+                stroke-dashoffset: 100;
+        }
+}
+@keyframes animate-path3 {
+        100%{
+                stroke-dashoffset: 125;
+        }
+}
+@keyframes animate-path4 {
+        100%{
+                stroke-dashoffset: 75;
+        }
+}
+@keyframes animate-path5 {
+        100%{
+                stroke-dashoffset: 150;
+        }
+}
+
+.radial-bar .percentage{position:absolute; top: 45%; left: 50%; transform: translate(-50%,-50%); font-size: 45px;
+                        font-weight: 500; animation: showText 0.5 2s linear forwards; opacity: 0; font-family: 'League Spartan', sans-serif;}
+.radial-bar .text{width: 100%; position: absolute; text-align: center; left: 50%; bottom: -5px; transform: translateX(-50%);
+                    font-size: 17px; font-weight: 500; animation: showText 0.5s 2s linear forwards; opacity: 0;
+                    font-family: 'League Spartan', sans-serif; top: 60%;} 
+
+#services{padding: 30px 0; background-image: url(images/franci-bg2.png); width: auto; height: auto;
+        padding-top: 90px; background-repeat: no-repeat; background-size: cover;
+        color: white;}
+.serv-title{font-size: 90px; font-family: 'League Spartan', sans-serif; margin-left: 20px;}
+.services-list{display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 40px; justify-content: center; margin-top: 50px; 
+               border: 1px#DDC571;}
+.services-list h2{ color: white;font-size: 30px; font-family: 'Garet', sans-serif; margin-bottom: 15px; font-weight: 300; }
+.services-list p{color: white;font-size: 16px; font-family: 'Garet', sans-serif; text-align: justify;}
+.services-list div{border-right: 10px; padding: 40px; background-color: #333;}
+.services-list div i{font-size: 60px; margin-bottom: 30px;}
+
+.logo-contact {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%; padding-bottom: 30px; }
+
+.contact{padding: 30px 0; background-image: url(images/franci-bg.png); width: auto; height: 730px; background-repeat: no-repeat; background-size: cover;
+        color: white; font-family: 'League Spartan', sans-serif; }
+
+.con-title{font-size: 60px;}
+
+.container-contact .row{display: flex; background-color: #000000;
+        flex-direction: row; border-radius: 20px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        max-width: 840px;}
+
+::placeholder {color: #ffffff; }
+.contact-left{flex-basis: 100%; }
+.contact-left p{margin-top: 30px; font-size: 16px; font-family: 'Garet', sans-serif;}
+.contact-left p i{color: #DDC571; margin-right: 15px; font-size: 25px;}
+
+.social-icons{margin-top: 30px;}
+.social-icons a{text-decoration: none; font-size: 30px; margin-right: 15px; color: white; display: inline-block; transition: transform 0.5s;}
+.social-icons a:hover{color: #DDC571; transform: translateY(-5px);}
+.dl-rs-1-btn{width: 200px; height: 45px; display: flex; justify-content: center; align-items: center; font-family: 'Garet', sans-serif;;
+        color: white; background-color: #6a663f; margin-top: 50px; text-decoration: none; margin-right: 15px;}
+.contact-right{flex-basis: 60%; position: absolute; left: 50%; }
+.contact-right form{width: 100%; max-width: 400px; opacity: 0.2;}
+.submit-btn{background-color: #6a663f;width: 100px; height: 45px; color: white; font-family: 'League Spartan', sans-serif; font-size: 20px;}
+
+input, textarea{width: 100%; border: 0; outline: none; background-color: #414141; padding: 15px; margin: 15px 0;
+                          color: #fff; font-size: 15px; border-radius: 6px; font-family: 'Garet', sans-serif; }
+textarea{max-width: 450px;}
+
+.item img {
+        height: 280px;
+    }
+.testi{display: grid; height: 100%; place-items: center; color: white; box-sizing: border-box; margin: 0; padding: 0;}
+.testi-box p{font-family: 'Garet', sans-serif;}
+.wrapper .testi-box .testi-info{margin-top: 30px;}
+
+.wrapper{max-width: 1200px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
+
+.t-name, .job{margin-left: 100px;}
+.wrapper .testi-box p{text-align: justify;}
+.wrapper .testi-box{border-radius: 3px; padding: 25px; width: calc(30% - 10px); background-color:#333; margin-bottom: 30px;}
+.wrapper .testi-box .testi-info .t-name{font-size: 20px; font-weight: 600; font-family: 'League Spartan', sans-serif; margin-top: 30px;}
+.job{font-size: 18px; font-weight: 500; font-family: 'League Spartan', sans-serif; color: #DDC571;}
+.wrapper .testi-box .content .image{height: 75px; width: 75px; padding: 3px; background-color: #6a663f; border-radius: 50%; float: left; }
+.testi-box .content .image img{height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 2px solid white;}
 
 
+@media (max-width: 1045px){
+        .wrapper .testi-box{
+                width: calc(50% -10px);
+        }
+}
 
+.serv-title-1{font-size: 90px; font-family: 'League Spartan', sans-serif; margin-left: 20px; margin-top: 80px; margin-bottom: 60px;}

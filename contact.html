@@ -2,12 +2,11 @@
 <html>
 	<head>
 		<title>Francilyn's Portfolio - Contact</title>
-		<link href="design-contact.css" rel="stylesheet" type="text/css"/>
-        <link href="design.css" rel="stylesheet" type="text/css"/>	
+		<link href="design.css" rel="stylesheet" type="text/css"/>	
         <link rel="shortcut icon" href="images/franci-logo.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	</head>
 	<body>
         <!--Navigation-->
@@ -15,24 +14,69 @@
 			<header>
 				<nav id="TOP">
 				  <img src = "images/franci-logo.png" alt = "Franci Logo" class="logo" >
-                    <a class="Link" href = "" title = "Projects">CONTACTS</a>
+                    <a class="Link" href = "contact.html" title = "Projects">CONTACT</a>
 				    <a class="Link" href = "project.html" title = "Projects">PROJECTS</a>
+                    <a class="Link" href = "services.html" title = "Projects">SERVICES</a>
+                    <a class="Link" href = "#about" title = "Projects">ABOUT</a>
 				    <a class="Link-Home" href = "index.html" title = "Home">HOME</a>
 				</nav>
 			</header>
 		</div>
-        
-            <div class="intro-proj-contact">
-                <img src="images/franci-logo.png" alt = "Franci Logo" class="logo-contact">
-                <h1>CONTACT ME</h1>
 
-                <form id="form" class="topBefore">
-                        <input id="name" type="text" placeholder="NAME">
-                        <input id="email" type="text" placeholder="E-MAIL">
-                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                <input id="submit" type="submit" value="GO!">
-                
-                </form>
+
+        <!--Contact Form-->
+        <div class="contact">
+            <div class="container-contact">
+                <img src="images/franci-logo.png" alt = "Franci Logo" class="logo-contact">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="con-title">CONTACT ME</h1>
+                        <p><i class='bx bx-mail-send'></i>estanislaofrancilyn@gmail.com</p>
+                        <p><i class='bx bxs-phone'></i>0960 564 4785</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/francilyn.estanislao/"><i class='bx bxl-facebook-square bx-tada'></i></a>
+                            <a href="https://www.instagram.com/francilynnnn/"><i class='bx bxl-instagram-alt bx-tada'></i></a>
+                            <a href="https://twitter.com/Francilynnn"><i class='bx bxl-twitter bx-tada'></i></a> 
+                        </div>
+                        <a href="files/Estanislao-Resume.pdf" download class="dl-rs-1-btn">Download Resume</a>
+                    </div>
+                    <div class="contact-right"></div>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Name" autocomplete="off" required>
+                            <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                            <textarea name="Message"  rows="3" placeholder="Message" class="message" autocomplete="off"></textarea>
+                            <button type="submit" class="submit-btn">SUBMIT</button>
+                            <span id="msg"></span>
+                        </form>
+
+                        <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+                        <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+                        <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+                        <script>
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbykJfYNl3O4DS0hyQ65VyuRbH73gdpWbbmZiM51tTaHH-Z-O4pbf1IE64nUP17bufT49Q/exec'
+                            const form = document.forms['submit-to-google-sheet']
+                            const msg = document.getElementById('msg')
+                          
+                            form.addEventListener('submit', e => {
+                              e.preventDefault()
+                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => {
+                                    msg.innerHTML = "Thank your for your message!"
+                                    setTimeout(function(){
+                                        msg.innerHTML=""
+                                }, 5000)
+                                form.reset()
+                            })
+                                .catch(error => console.error('Error!', error.message))
+                            })
+                          </script>
+
+                </div>
             </div>
+        </div>
+
+
+
     </body>
         
